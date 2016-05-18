@@ -1,6 +1,7 @@
 package dk.loeschcke.rps.strategy;
 
 import dk.loeschcke.rps.models.Shape;
+import dk.loeschcke.rps.util.IRandomGenerator;
 
 import java.util.Random;
 
@@ -9,10 +10,16 @@ import java.util.Random;
  */
 public class RandomHandStrategy implements HandStrategy {
 
+    private IRandomGenerator randomGenerator;
+
+    public RandomHandStrategy(IRandomGenerator randomGenerator) {
+        this.randomGenerator = randomGenerator;
+    }
+
     @Override
     public Shape execute() {
         Shape[] shapes = Shape.values();
-        int index = new Random().nextInt(shapes.length);
+        int index = randomGenerator.nextInt(shapes.length);
         return shapes[index];
     }
 
