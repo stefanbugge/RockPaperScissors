@@ -22,4 +22,11 @@ public class Hand {
     public String getName() {
         return name;
     }
+
+    @Override
+    public String toString() {
+        return "Hand{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }
