@@ -19,14 +19,8 @@ public class Hand {
         return strategy.execute();
     }
 
-    public String getName() {
-        return name;
-    }
-
     @Override
     public String toString() {
-        return "Hand{" +
-                "name='" + name + '\'' +
-                '}';
+        return "Hand['" + name + "']";
     }
 }
