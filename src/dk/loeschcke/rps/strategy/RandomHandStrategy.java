@@ -3,12 +3,10 @@ package dk.loeschcke.rps.strategy;
 import dk.loeschcke.rps.models.Shape;
 import dk.loeschcke.rps.util.IRandomGenerator;
 
-import java.util.Random;
-
 /**
  * Created by sbugge on 18/05/16.
  */
-public class RandomHandStrategy implements HandStrategy {
+public class RandomHandStrategy implements IHandStrategy {
 
     private IRandomGenerator randomGenerator;
 

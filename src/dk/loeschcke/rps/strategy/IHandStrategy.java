@@ -5,7 +5,7 @@ import dk.loeschcke.rps.models.Shape;
 /**
  * Created by sbugge on 18/05/16.
  */
-public interface HandStrategy {
+public interface IHandStrategy {
 
     Shape execute();
 

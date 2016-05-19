@@ -5,7 +5,7 @@ import dk.loeschcke.rps.models.Shape;
 /**
  * Created by sbugge on 18/05/16.
  */
-public class FixedHandStrategy implements HandStrategy {
+public class FixedHandStrategy implements IHandStrategy {
 
     private Shape fixedShape;
 

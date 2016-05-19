@@ -1,6 +1,6 @@
 package dk.loeschcke.rps.models;
 
-import dk.loeschcke.rps.strategy.HandStrategy;
+import dk.loeschcke.rps.strategy.IHandStrategy;
 
 /**
  * Created by sbugge on 18/05/16.
@@ -8,9 +8,9 @@ import dk.loeschcke.rps.strategy.HandStrategy;
 public class Hand {
 
     private final String name;
-    private HandStrategy strategy;
+    private IHandStrategy strategy;
 
-    public Hand(String name, HandStrategy handStrategy) {
+    public Hand(String name, IHandStrategy handStrategy) {
         this.name = name;
         this.strategy = handStrategy;
     }
