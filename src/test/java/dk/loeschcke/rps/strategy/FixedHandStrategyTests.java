@@ -1,4 +1,4 @@
-package dk.loeschcke.rps.tests.strategy;
+package dk.loeschcke.rps.strategy;
 
 import dk.loeschcke.rps.models.Shape;
 import dk.loeschcke.rps.strategy.FixedHandStrategy;

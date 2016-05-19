@@ -1,4 +1,4 @@
-package dk.loeschcke.rps.tests;
+package dk.loeschcke.rps;
 
 import dk.loeschcke.rps.Game;
 import dk.loeschcke.rps.models.Shape;
