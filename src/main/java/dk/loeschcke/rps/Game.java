@@ -35,7 +35,7 @@ public class Game {
 
         int result = compare(s1, s2);
 
-        System.out.println(h1 + " = " + s1 + "; " + h2 + " = " + s2);
+        System.out.println(h1.getName() + "(" + s1 + ") vs " + h2.getName() + "(" + s2 + ")");
 
         Hand winner = null;
         if (result == 1) winner = h1;

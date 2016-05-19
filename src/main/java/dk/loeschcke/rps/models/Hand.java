@@ -23,4 +23,8 @@ public class Hand {
     public String toString() {
         return "Hand['" + name + "']";
     }
+
+    public String getName() {
+        return name;
+    }
 }

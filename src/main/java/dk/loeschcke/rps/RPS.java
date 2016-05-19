@@ -20,11 +20,11 @@ public class RPS {
 
             Hand winner = game.play();
             if (winner == null) {
-                System.out.println("   TIE");
+                System.out.println("TIE");
             } else {
-                System.out.println("   winner: " + winner);
+                System.out.println("Winner: " + winner.getName());
             }
-
+            System.out.println();
             i++;
         }
     }
