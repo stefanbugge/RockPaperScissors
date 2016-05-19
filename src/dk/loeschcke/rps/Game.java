@@ -28,17 +28,19 @@ public class Game {
         return (s1.getValue() + 3 - s2.getValue()) % 3;
     }
 
-    public void play() {
+    public Hand play() {
 
         Shape s1 = h1.throwShape();
         Shape s2 = h2.throwShape();
 
         int result = compare(s1, s2);
 
-        System.out.println(h1 + " = " + s1 + "; " + h2 + " = " + s2 + "; winner = " + result);
-        if (result == 0) {
-            play();
-        }
+        System.out.println(h1 + " = " + s1 + "; " + h2 + " = " + s2);
+
+        Hand winner = null;
+        if (result == 1) winner = h1;
+        if (result == 2) winner = h2;
+        return winner;
     }
 
 }
