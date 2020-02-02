@@ -1,4 +1,4 @@
-# Rock-paper-scissors
+# Rock-Paper-Scissors
 
 A simple Rock-Paper-Scissors game implemented in Java. 
 
